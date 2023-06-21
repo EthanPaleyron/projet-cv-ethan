@@ -49,7 +49,6 @@ header {
 main {
 
     // ma présentation
-
     article {
         margin: 8rem 20%;
         height: 16rem;
@@ -73,6 +72,49 @@ main {
     }
 
     // mes projets
+    section {
+        height: 25rem;
+        display: flex;
+
+        blockquote {
+            color: $w;
+            background-color: $eden-school;
+            width: 50%;
+            padding: 0 6rem 0 14rem;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            cite {
+                font-style: normal;
+            }
+
+            cite:before, cite:after  {
+                content: ' " ';
+            }
+        }
+
+        ol {
+            background-color: $g;
+            width: 50%;
+            padding: 0 0 0 9rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4rem;
+
+            li {
+            color: $eden-school;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            list-style: decimal-leading-zero;
+            }
+
+            span {
+                color: $text-b;
+            }
+        }
+    }
 }
 
 // FOOTER

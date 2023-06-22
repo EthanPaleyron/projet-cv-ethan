@@ -83,14 +83,15 @@ main {
             display: flex;
             justify-content: end;
             align-items: center;
-            
+
             cite {
                 color: $w;
                 font-size: 1.3rem;
                 font-style: normal;
             }
 
-            cite:before, cite:after  {
+            cite:before,
+            cite:after {
                 content: ' " ';
             }
         }
@@ -108,11 +109,11 @@ main {
             flex-direction: column;
             justify-content: center;
             gap: 4rem;
-            
+
             li {
                 counter-increment: li;
             }
-            
+
             li:before {
                 margin-right: 2rem;
                 content: "0" counter(li);
@@ -123,26 +124,28 @@ main {
     }
 
     // mon parcours
-    .content-projets {
+    .content_projets_parcours {
         margin: 3rem 25%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 70%;
-        
+
         .mes_projets {
+            margin-bottom: 5rem;
             text-transform: uppercase;
-    
+
             h2:first-child {
                 margin-bottom: 1rem;
-                font-size: 2rem;
-                font-weight: 600;
+                font-size: 2.7rem;
+                font-weight: 400;
             }
-            
+
             .wrap-project {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 1.5rem;
-                
+
                 article {
                     position: relative;
 
@@ -157,7 +160,7 @@ main {
                         color: $w;
                         line-height: 1rem;
                         width: 100%;
-                        height: 97%;
+                        height: 100%;
                         background-color: $eden-school;
                         display: flex;
                         flex-direction: column;
@@ -177,22 +180,47 @@ main {
                     img {
                         object-fit: cover;
                         width: 25rem;
-                        height: 15rem;
+                        height: 100%;
                     }
-                } 
+                }
+            }
+        }
+
+        .mon_parcours {
+
+            h2 {
+                margin-bottom: 1rem;
+                font-size: 2.7rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            article {
+                display: flex;
+                align-items: center;
+
+                time {
+                    margin-right: 6rem;
+                    color: $eden-school;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+
+                div {
+                    text-align: start;
+
+                    h3 {
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        color: $text-g;
+                    }
+                }
             }
         }
     }
 
-    .mon_parcours {
-        display: flex;
-        justify-content: center;
-
-        h2 {
-            font-size: 2rem;
-            text-transform: uppercase;
-        }
-    }
 }
 
 // FOOTER

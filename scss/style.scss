@@ -20,6 +20,10 @@ header {
             ul {
                 display: flex;
                 gap: 2.7rem;
+
+                a:hover {
+                    color: $eden-school;
+                }
             }
         }
     }
@@ -189,7 +193,7 @@ main {
         .mon_parcours {
 
             h2 {
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
                 font-size: 2.7rem;
                 font-weight: 400;
                 text-transform: uppercase;
@@ -221,6 +225,71 @@ main {
         }
     }
 
+    // mes intérêts
+    .mes_intérêts {
+        text-align: center;
+        background-color: $g;
+        padding: 3rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h2 {
+            font-size: 2.7rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 2rem 0 3.5rem;
+            width: 50rem;
+        }
+
+        div {
+            display: flex;
+            gap: 2rem;
+
+            section {
+                position: relative;
+
+                img {
+                    object-fit: cover;
+                    width: 30rem;
+                    height: 100%;
+                }
+
+                .title_card {
+                    position: absolute;
+                    top: 0;
+                    background-color: $b-opacity;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    h2 {
+                        color: $w;
+                        font-size: 2rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// pourquoi eden school
+.pourquoi_eden_school {
+    margin: 4rem 15rem 4.5rem;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 3rem;
+        font-size: 2.7rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
 }
 
 // FOOTER
@@ -239,7 +308,7 @@ footer {
     }
 }
 
-// HOVER
-a:hover {
-    color: $eden-school;
+// other
+.margin_ol {
+    margin-left: 0.5rem;
 }
